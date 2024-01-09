@@ -1,0 +1,283 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}DrK instrument  (GST IN.03EKUPP9829J1Z7){% endblock title %}
+    </title>
+
+    <meta
+      content="
+      Discover top-quality lab equipment at DrK Instruments, your trusted supplier 
+      for precision instruments. Explore our range, including Capsule Filling Machines,
+       Rotary Vacuum Evaporators (Digital & Analog), Tablet Hardness Testers, and more. 
+       From Dissolution Rate Test Apparatus to Manual & Automatic Tablet Making Machines,
+        our products ensure accuracy and reliability. Elevate your lab's efficiency with
+        cutting-edge technology and exceptional service. Browse now!
+    "
+      name="description"
+    />
+
+    <meta
+      content="
+      Lab Equipment Supplier,
+      Capsule Filling Machine,
+      Rotary Vacuum Evaporator,
+      Digital Rotary Vacuum Evaporator,
+      Analog Rotary Vacuum Evaporator,
+      Tablet Hardness Tester,
+      Bulk Density Apparatus,
+      Dissolution Rate Test Apparatus,
+      Disintegration Rate Test Apparatus,
+      Tablet Friability Tester,
+      Flocculator Jar Test Apparatus,
+      Magnetic Stirrer,
+      Rota Rod Apparatus,
+      Ball Mill Apparatus,
+      Diffusion Cell Apparatus,
+      Tablet Making Machine,
+      Manual Tablet Making Machine,
+      Automatic Tablet Making Machine,
+      Tube Filling Machine,
+      Manual Tube Filling Machine,
+      Tube Sealing Machine,
+      Coating Pan Machine,
+      Manual Coating Pan Machine."
+      name="DrK Instruments"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'favicon.svg' %}" type="image/svg+xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+
+    <!-- Preload Images -->
+    <link rel="preload" as="image" href="{% static 'images/hero-banner.png' %}" media="min-width(768px)" />
+    <link rel="preload" as="image" href="{% static 'images/hero-banner-bg.png' %}" media="min-width(768px)" />
+    <link rel="preload" as="image" href="{% static 'images/hero-bg.jpg' %}" />
+
+  </head>
+
+  <body id="top">
+    <!-- #HEADER -->
+    <header class="header" data-header>
+      <div class="container">
+        <h1>
+          <a href="{% url 'index' %}" class="logo">DrK Instrument<span class="navbar-link"></span></a>
+          <span class="gstin" style="font-size: 12px; color: #FFFFFF
+          ; margin-left: 10px;">GSTIN: 03EKUPP9829J1Z7</span>
+          
+        </h1>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="nav-item">
+              <a href="{% url 'index' %}" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="{% url 'product_list' %}" class="navbar-link" data-nav-link>Products List</a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="{% url 'contact_us' %}" class="navbar-link" data-nav-link>Contact Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="{% url 'blog_list'%}" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="{% url 'about_us' %}" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-btn-group">
+          <button class="search-btn" aria-label="Search" data-search-btn>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+          <a href="{% url 'user-logins'%}">
+            <button class="btn btn-hover">Sign In</button>
+          </a>
+          <a href="{%url 'user-register'%}">
+            <button class="btn btn-hover">Register</button>
+          </a>
+          <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+
+
+    <!-- #SEARCH BOX -->
+    <div class="search-container" data-search-container>
+      <div class="search-box">
+        <input
+          type="search"
+          name="search"
+          aria-label="Search here"
+          placeholder="Type keywords here..."
+          class="search-input"
+        />
+
+        <button
+          class="search-submit"
+          aria-label="Submit search"
+          data-search-submit-btn
+        >
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+      <button
+        class="search-close-btn"
+        aria-label="Cancel search"
+        data-search-close-btn
+      ></button>
+    </div>
+
+    <!-- #HERO -->
+
+    <section
+class="hero"
+id="home"
+style="background-image: url('{% static 'images/hero-bg.jpg' %}')"
+>
+<div class="container">
+  <div class="hero-content">
+    <p class="hero-subtitle" style="font-size: medium;">Precision in Every Component, Excellence in Every Experiment</p>
+    <h2 class="h1 hero-title">Tomorrow's Science, Today's Equipment!</h2>
+    <br/>
+    <button class="btn" onclick="window.location.href='#contact'">Contact Us</button>
+  </div>
+
+  <figure class="hero-banner">
+    <img
+      src="{% static 'images/hero-banner-bg1.png' %}"
+      width="820"
+      height="800"
+      alt=""
+      aria-hidden="true"
+      class="w-100 hero-img-bg"
+    />
+    <img
+      src="{% static 'images/hero-banner1.png' %}"
+      width="600"
+      height="637"
+      loading="lazy"
+      alt="Burger"
+      class="w-100 hero-img"
+    />
+  </figure>
+</div>
+</section>
+   
+
+    <main id="main">{% block content %}{% endblock %}</main>
+
+    <footer class="footer" id="contact">
+      <div
+        class="footer-top"
+        style="background-image: url('{% static 'images/footer-illustration.png' %}')"
+      >
+        <div class="container">
+          <div class="footer-brand">
+            <a href="" class="logo">DrK Instruments    <span class="span">..</span></a>
+            <p class="footer-text">
+              Precision in Every Component, Excellence in Every Experiment
+
+              Tomorrow's Science, Today's Equipment!
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact Info</p>
+            </li>
+
+            <li>
+              <p class="footer-list-item">+91-8054716971</p>
+            </li>
+
+            <li>
+              <p class="footer-list-item">drkinstrument@gmail.com</p>
+            </li>
+
+            <li>
+              <address class="footer-list-item">
+                Plot No 2 Ziarkpur, Punjab, India
+              </address>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Opening Hours</p>
+            </li>
+
+            <li>
+              <p class="footer-list-item">Monday-Saturday:08:00 AM-:8:00 PM</p>
+            </li>         
+
+           
+          </ul>
+
+          
+
+      
+    </footer>
+
+    <!-- #BACK TO TOP -->
+    <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+      <ion-icon name="chevron-up"></ion-icon>
+    </a>
+
+    <!-- custom js link -->
+    <script src="{% static 'js/script.js' %}" defer></script>
+
+    <!-- ionicon link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+{% load static %}
+<!-- blog/templates/blog/blog_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog List - DrK Instruments</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'favicon.svg' %}" type="image/svg+xml" />
+
+    <!-- Preload Images -->
+    <link rel="preload" as="image" href="{% static 'images/hero-banner.png' %}" media="(min-width: 768px)" />
+    <link rel="preload" as="image" href="{% static 'images/hero-banner-bg.png' %}" media="(min-width: 768px)" />
+    <link rel="preload" as="image" href="{% static 'images/hero-bg.jpg' %}" />
+</head>
+
+<body>
+
+   
+    <!-- Header -->
+    <header class="header" data-header>
+        <div class="container">
+          <h1>
+            <a href="{% url 'index' %}" class="logo">DrK instrument<span class="navbar-link"></a>
+          </h1>
+  
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+              <li class="nav-item">
+                <a href="{% url 'index' %}" class="navbar-link" data-nav-link>Home</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="{% url 'product_list' %}" class="navbar-link" data-nav-link>Products List</a>
+              </li>
+              
+              <li class="nav-item">
+                <a href="{% url 'contact_us' %}" class="navbar-link" data-nav-link>Contact Us</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="{% url 'blog_list'%}" class="navbar-link" data-nav-link>Blog</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="{% url 'about_us' %}" class="navbar-link" data-nav-link>About Us</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <div class="header-btn-group">
+            <button class="search-btn" aria-label="Search" data-search-btn>
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+            <a href="{% url 'user-logins'%}">
+              <button class="btn btn-hover">Sign In</button>
+            </a>
+            <a href="{%url 'user-register'%}">
+              <button class="btn btn-hover">Register</button>
+            </a>
+            <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+              <span class="line top"></span>
+              <span class="line middle"></span>
+              <span class="line bottom"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="background-image: url('{% static 'images/hero-bg.jpg' %}')">
+        <div class="container mt-10 bg-white">
+
+            <div class="row">
+                {% for post in posts %}
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 2px solid #ffd700; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                        <!-- Remove the image section -->
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>{{ post.title }}</strong></h4>
+                            <!-- Display a brief excerpt of 50 words -->
+                            <p class="card-text">{{ post.content|truncatewords:50 }}</p>
+                            <p class="card-text"><small class="text-muted">Published on: {{ post.pub_date }}</small></p>
+                            <a href="{% url 'view_blog_post' post.id %}" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+        
+        
+        
+        
+
+
+
+    </section>
+
+
+
+
+    <!-- Your existing header code -->
+
+  
+
+    <!-- Your existing script and ionicons links -->
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

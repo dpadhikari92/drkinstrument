@@ -1,0 +1,221 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}DrK Instruments{% endblock title %}</title>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Discover top-quality lab equipment at DrK Instruments, your trusted supplier for precision instruments. Explore our range, including Capsule Filling Machines, Rotary Vacuum Evaporators (Digital & Analog), Tablet Hardness Testers, and more. From Dissolution Rate Test Apparatus to Manual & Automatic Tablet Making Machines, our products ensure accuracy and reliability. Elevate your lab's efficiency with cutting-edge technology and exceptional service. Browse now!" />
+    <meta name="DrK Instruments" content="Lab Equipment Supplier, Capsule Filling Machine, Rotary Vacuum Evaporator, Digital Rotary Vacuum Evaporator, Analog Rotary Vacuum Evaporator, Tablet Hardness Tester, Bulk Density Apparatus, Dissolution Rate Test Apparatus, Disintegration Rate Test Apparatus, Tablet Friability Tester, Flocculator Jar Test Apparatus, Magnetic Stirrer, Rota Rod Apparatus, Ball Mill Apparatus, Diffusion Cell Apparatus, Tablet Making Machine, Manual Tablet Making Machine, Automatic Tablet Making Machine, Tube Filling Machine, Manual Tube Filling Machine, Tube Sealing Machine, Coating Pan Machine, Manual Coating Pan Machine." />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'favicon.svg' %}" type="image/svg+xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+
+    <!-- Preload Images -->
+    <link rel="preload" as="image" href="{% static 'images/hero-banner.png' %}" media="(min-width: 768px)" />
+    <link rel="preload" as="image" href="{% static 'images/hero-banner-bg.png' %}" media="(min-width: 768px)" />
+    <link rel="preload" as="image" href="{% static 'images/hero-bg.jpg' %}" />
+</head>
+
+<body id="top">
+    <!-- Header -->
+    <header class="header" data-header>
+        <div class="container">
+          <h1>
+            <a href="{% url 'index' %}" class="logo">DrK instrument<span class="navbar-link"></a>
+          </h1>
+  
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+              <li class="nav-item">
+                <a href="{% url 'index' %}" class="navbar-link" data-nav-link>Home</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="{% url 'product_list' %}" class="navbar-link" data-nav-link>Products List</a>
+              </li>
+              
+              <li class="nav-item">
+                <a href="{% url 'contact_us' %}" class="navbar-link" data-nav-link>Contact Us</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="{% url 'blog_list'%}" class="navbar-link" data-nav-link>Blog</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="{% url 'about_us' %}" class="navbar-link" data-nav-link>About Us</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <div class="header-btn-group">
+            <button class="search-btn" aria-label="Search" data-search-btn>
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+            <a href="{% url 'user-logins'%}">
+              <button class="btn btn-hover">Sign In</button>
+            </a>
+            <a href="{%url 'user-register'%}">
+                <button class="btn btn-hover">Register</button>
+              </a>
+            <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+              <span class="line top"></span>
+              <span class="line middle"></span>
+              <span class="line bottom"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+    <!-- Search Box -->
+    <div class="search-container" data-search-container>
+        <!-- ... (Your search box content) ... -->
+    </div>
+
+    <!-- Hero Section -->
+   <!-- Hero Section -->
+<!-- Hero Section -->
+<!-- Hero Section -->
+<!-- Hero Section -->
+<!-- Hero Section -->
+<section class="hero" id="home" style="background-image: url('{% static 'images/hero-bg.jpg' %}')">
+    <div class="container">
+        <div class="hero-content">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="about-section" style="background-color: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+                        <div class="about-block">
+                            <h2 style="color: black;">Our Story</h2>
+                            <br/>
+                            <p>
+                                About Us: DK Instruments
+
+                                
+                                Welcome to DK Instruments, a testament to innovation and collaboration in the realm of precision R&D, pharmaceutical, and medical lab equipment.
+                                 Our story is intricately woven into the fabric of Greatsite's visionary "inbound" approach, where we transcend the role of mere manufacturers to become true partners in progress.<br/><br/>
+                                
+                                At DK Instruments, we go beyond the conventional understanding of crafting tools; we embark on a collaborative journey towards excellence.
+                                 Our foundation is rooted in the belief that the pursuit of precision requires a holistic and synergistic approach. <br/><br/>We understand that every breakthrough in research, every advancement in pharmaceuticals, and every stride in medical diagnostics is a collective effort.
+                                
+                                Born from the foresight of Greatsite, our commitment is not just to produce equipment but to contribute meaningfully 
+                                to the advancement of scientific and medical frontiers. We take pride in being an integral part of the intricate processes that drive progress in R&D, pharmaceuticals, and medical laboratories.
+                                
+                                Our team at DK Instruments is a dynamic blend of expertise and passion, dedicated to delivering cutting-edge solutions. 
+                                From the conception of ideas to the realization of prototypes, we are involved at every step, ensuring that our products meet the highest standards of precision and reliability.
+                                
+                                <br/><br/>As partners in progress, we work closely with our clients, understanding their unique needs and challenges. 
+                                This collaborative spirit allows us to tailor our solutions, ensuring that our equipment seamlessly integrates into their workflows, enhancing efficiency and driving results.
+                                
+                                In an era where precision is paramount, DK Instruments stands as a beacon of quality and innovation.
+                                 We are not just providers of equipment; we are enablers of progress, catalysts for breakthroughs, and partners in the relentless pursuit of excellence.
+                                
+                                 <br/><br/>Join us on this collaborative journey, where innovation meets precision, and together, we shape the 
+                                future of R&D, pharmaceuticals, and medical laboratories. At DK Instruments, excellence is not a destination; it's the very essence of who we are.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="about-section" style="background-color: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+                        <div class="about-block">
+                            <h2 style="color: black;">Mission</h2>
+                            <br/>
+                            <p>At DK Instruments, our mission is to lead the way in precision, innovation, and collaboration within the fields of R&D, pharmaceuticals, and medical 
+                                laboratories. We are dedicated to transcending the traditional role of manufacturers by embracing a visionary "inbound" approach, where we not only produce
+                                cutting-edge equipment but also forge enduring partnerships in progress.<br/><br/>
+
+                                Our mission is rooted in the belief that the pursuit of precision demands a holistic and synergistic approach. We strive to be catalysts for collective 
+                                efforts, contributing meaningfully to the advancements in scientific and medical frontiers. Born from the foresight of Greatsite, our commitment extends
+                                 beyond the realm of production; it is a commitment to actively shape and elevate the landscape of research, pharmaceuticals, and medical diagnostics.<br/><br/>
+                                
+                                At DK Instruments, we are driven by a passion for excellence and a dynamic blend of expertise. Our mission is to deliver solutions that set new standards 
+                                in reliability and precision, from the conception of ideas to the realization of prototypes. We aim to be at the forefront of technological innovation,
+                                 ensuring that our products meet and exceed the highest industry standards.<br/><br/>
+                                
+                                As partners in progress, our mission is to work closely with our clients, understanding their unique needs and challenges. We embrace a collaborative 
+                                spirit that allows us to tailor solutions, seamlessly integrating our equipment into their workflows, enhancing efficiency, and driving measurable results.At Our Hub, we envision a seamless future where your entire company operates as a harmonious, interconnected entity. Our platform is designed to facilitate collaboration across diverse departments, empowering teams from marketing to sales to customer service. Our vision is rooted in the belief that while each hub is powerful on its own, the true potential lies in their collective synergy.
+                                <br/><br/>
+                                We foresee a workplace where barriers between departments dissolve, and information flows effortlessly, fostering a culture of collaboration and shared success. Our Hub is more than a collection of tools; it's a dynamic ecosystem where the strengths of each hub amplify the capabilities of the others.
+                                
+                                In this vision, marketing, sales, and customer service converge seamlessly, breaking down silos and creating a unified force. Our platform becomes the catalyst for streamlined workflows, efficient communication, and a holistic approach to addressing the needs of your company.
+                                <br/><br/>
+                                We anticipate a future where the power of collaboration is harnessed to drive innovation, enhance customer experiences, and optimize business processes. By bringing together the strengths of marketing, sales, and customer service, Our Hub becomes the central nerve system, propelling your company towards unprecedented levels of efficiency and success.
+                                
+                                At Our Hub, our vision is to empower your company to thrive in a collaborative ecosystem, where the sum of its parts is far greater than the individual hubs. Together, we envision a future where your entire organization works seamlessly, achieving new heights of productivity and excellence.
+                                <br/><br/>
+                                In an era where precision is paramount, DK Instruments stands as a beacon of quality and innovation. Our mission is to be enablers of progress, facilitating
+                                 breakthroughs and actively contributing to the relentless pursuit of excellence. We invite you to join us on this collaborative journey, where innovation 
+                                 meets precision, shaping the future of R&D, pharmaceuticals, and medical laboratories. At DK Instruments, our mission is not just a statement; it's the 
+                                 driving force behind everything we do.</p><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="about-section" style="background-color: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+                        <div class="about-block">
+                            <h2 style="color: black;">Vision</h2>
+                            <br/><br/>
+                            <p>At Our Hub, we envision a seamless future where your entire company
+                                 operates as a harmonious, interconnected entity. Our platform is designed to facilitate 
+                                 collaboration across diverse departments, empowering teams from marketing to sales to customer service.
+                                  Our vision is rooted in the belief that while each hub is powerful on its own, the true potential lies in their collective synergy.<br/><br/>
+
+                                We foresee a workplace where barriers between departments dissolve, and information flows effortlessly, fostering a
+                                 culture of collaboration and shared success. Our Hub is more than a collection of tools; it's a dynamic ecosystem 
+                                 where the strengths of each hub amplify the capabilities of the others.<br/><br/>
+                                
+                                In this vision, marketing, sales, and customer service converge seamlessly, breaking down silos 
+                                and creating a unified force. Our platform becomes the catalyst for streamlined workflows, efficient
+                                 communication, and a holistic approach to addressing the needs of your company.<br/><br/>
+                                
+                                We anticipate a future where the power of collaboration is harnessed to drive innovation,
+                                 enhance customer experiences, and optimize business processes. By bringing together the 
+                                 strengths of marketing, sales, and customer service, Our Hub becomes the central nerve 
+                                 system, propelling your company towards unprecedented levels of efficiency and success.<br/><br/>
+                                
+                                At Our Hub, our vision is to empower your company to thrive in a collaborative ecosystem, 
+                                where the sum of its parts is far greater than the individual hubs. Together, we envision a
+                                 future where your entire organization works seamlessly, achieving new heights of productivity and excellence.<br/><br/></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Main Content -->
+
+
+ 
+
+  
+    <!-- Custom JS Link -->
+    <script src="{% static 'js/script.js' %}" defer></script>
+
+    <!-- Ionicons Link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

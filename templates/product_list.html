@@ -1,0 +1,118 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}DrK Instruments{% endblock title %}</title>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Discover top-quality lab equipment at DrK Instruments, your trusted supplier for precision instruments. Explore our range, including Capsule Filling Machines, Rotary Vacuum Evaporators (Digital & Analog), Tablet Hardness Testers, and more. From Dissolution Rate Test Apparatus to Manual & Automatic Tablet Making Machines, our products ensure accuracy and reliability. Elevate your lab's efficiency with cutting-edge technology and exceptional service. Browse now!" />
+    <meta name="DrK Instruments" content="Lab Equipment Supplier, Capsule Filling Machine, Rotary Vacuum Evaporator, Digital Rotary Vacuum Evaporator, Analog Rotary Vacuum Evaporator, Tablet Hardness Tester, Bulk Density Apparatus, Dissolution Rate Test Apparatus, Disintegration Rate Test Apparatus, Tablet Friability Tester, Flocculator Jar Test Apparatus, Magnetic Stirrer, Rota Rod Apparatus, Ball Mill Apparatus, Diffusion Cell Apparatus, Tablet Making Machine, Manual Tablet Making Machine, Automatic Tablet Making Machine, Tube Filling Machine, Manual Tube Filling Machine, Tube Sealing Machine, Coating Pan Machine, Manual Coating Pan Machine." />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'favicon.svg' %}" type="image/svg+xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+
+    <!-- Preload Images -->
+    <link rel="preload" as="image" href="{% static 'images/hero-banner.png' %}" media="(min-width: 768px)" />
+    <link rel="preload" as="image" href="{% static 'images/hero-banner-bg.png' %}" media="(min-width: 768px)" />
+    <link rel="preload" as="image" href="{% static 'images/hero-bg.jpg' %}" />
+</head>
+
+<body id="top">
+    <!-- Header -->
+    <header class="header" data-header>
+        <div class="container">
+            <h1>
+                <a href="{% url 'index' %}" class="logo">DrK Instruments<span class="navbar-link"></span></a>
+            </h1>
+
+            <!-- Navigation -->
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li class="nav-item">
+                        <a href="{% url 'index' %}" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#food-menu" class="navbar-link" data-nav-link>Products list</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'contact_us' %}" class="navbar-link" data-nav-link>Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'blog_list'%}" class="navbar-link" data-nav-link>Blog</a>
+                      </li>
+                    <li class="nav-item">
+                        <a href="{% url 'about_us' %}" class="navbar-link" data-nav-link>About Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Header Buttons -->
+            <div class="header-btn-group">
+                <button class="search-btn" aria-label="Search" data-search-btn>
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+                <a href="{% url 'user-logins'%}">
+                    <button class="btn btn-hover">Sign In</button>
+                </a>
+                <a href="{%url 'user-register'%}">
+                    <button class="btn btn-hover">Register</button>
+                  </a>
+                <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+                    <span class="line top"></span>
+                    <span class="line middle"></span>
+                    <span class="line bottom"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="background-image: url('{% static 'images/hero-bg.jpg' %}')">
+        <img src="{% static 'images/list11.png' %}" alt="Description of your image" style="padding: 10px; display: block; margin: 0 auto;" width="700" height="200">
+        <img src="{% static 'images/list21.png' %}" alt="Description of your image" style="padding: 10px; display: block; margin: 0 auto;" width="700" height="200">
+        <img src="{% static 'images/list31.png' %}" alt="Description of your image" style="padding: 10px; display: block; margin: 0 auto;" width="700" height="200">
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Main Content -->
+
+
+ 
+
+  
+    <!-- Custom JS Link -->
+    <script src="{% static 'js/script.js' %}" defer></script>
+
+    <!-- Ionicons Link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

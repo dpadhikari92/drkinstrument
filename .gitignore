@@ -1,0 +1,5 @@
+**/migrations
+*.DS_Store
+**/__pycache__
+**/.DS_Store
+media/shop/images/WhatsApp_Image_2023-06-29_at_14.21.14.jpeg

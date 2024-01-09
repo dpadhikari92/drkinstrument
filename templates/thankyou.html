@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock title %}
+
+{% block content %}
+    {% load static %}
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="h1 hero-title">Welcome to Our Website!</h2>
+                <p>This is the home page content.</p>
+            </div>
+            <figure class="hero-banner">
+                <img src="{% static 'images/hero-banner-bg1.png' %}" width="820" height="800" alt="" aria-hidden="true"
+                    class="w-100 hero-img-bg" />
+                <img src="{% static 'images/hero-banner1.png' %}" width="600" height="637" loading="lazy" alt="Burger"
+                    class="w-100 hero-img" />
+            </figure>
+        </div>
+    </section>
+{% endblock content %}
