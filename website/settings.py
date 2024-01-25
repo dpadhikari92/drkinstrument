@@ -81,6 +81,7 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
+<<<<<<< HEAD
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
@@ -89,6 +90,9 @@ DATABASES = {
         'HOST': 'monorail.proxy.rlwy.net',
         'PORT': '10504',
     }
+=======
+  
+>>>>>>> bddd576c09b47981d9c9c7d8fcf7700be486a0dc
 }
 
 # Password validation
