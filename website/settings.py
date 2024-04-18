@@ -24,10 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-z*n+7f+)wm_)ym4tg9-1#+zvrs*rbjlxh5f85-+#bc^%5-73n#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['https://www.drkinstrument.com/']  # '.vercel.app', '.now.sh'
-CSRF_TRUSTED_ORIGINS = ['https://www.drkinstrument.com/']
+ALLOWED_HOSTS = ['www.drkinstrument.com']  # '.vercel.app', '.now.sh'
+CSRF_TRUSTED_ORIGINS = ['www.drkinstrument.com']
 
 # Application definition
 
