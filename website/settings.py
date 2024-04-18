@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-z*n+7f+)wm_)ym4tg9-1#+zvrs*rbjlxh5f85-+#bc^%5-73n#
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']  # '.vercel.app', '.now.sh'
-
+CSRF_TRUSTED_ORIGINS = ['web-production-b266.up.railway.app']
 
 # Application definition
 
@@ -149,4 +149,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
-CSRF_TRUSTED_ORIGINS = ['https://www.drkinstrument.com/']
