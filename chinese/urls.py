@@ -14,6 +14,11 @@ urlpatterns = [
     path('blog/create/', views.create_blog_post, name='create_blog_post'),
     path('blog/<int:post_id>/', views.view_blog_post, name='view_blog_post'),
 
+    path('capsule-filling-machine/', views.capsule,
+         name='capsule-filling-machine'),
+
+
+
 
 
 ]

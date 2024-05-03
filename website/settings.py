@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ['*']  # '.vercel.app', '.now.sh'
 CSRF_TRUSTED_ORIGINS = ['https://www.drkinstrument.com']
 
 # Application definition
+SITE_ID = 1
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
     'user',
     'crispy_forms',
     'crispy_bootstrap4',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [

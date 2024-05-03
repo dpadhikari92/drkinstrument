@@ -66,6 +66,10 @@ def product_list(request):
     return render(request, 'product_list.html')
 
 
+def capsule(request):
+    return render(request, 'capsule.html')
+
+
 # blog/views.py
 
 
