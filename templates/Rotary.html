@@ -1,0 +1,237 @@
+
+{% load static %}
+<!-- blog/templates/blog/blog_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta
+
+  content=
+  "
+  Discover Rotary Apparatus from Drk Instrument.Precision engineering and best quality product for industry. Contact us today.
+    Our Rotary apparatus is ideal for effective removal of solvant from sample using evaporation.
+    Rotary evaporators are versatile tools used in a variety of applications beyond continuous distillation 
+    of volatile solvents. They play a key role in concentration, crystallization, drying, separation, and solvent 
+    recovery processes. These instruments are widely utilized across numerous industries, such as pharmaceuticals,
+     chemicals, and biotechnology.
+"
+  name="description"
+/>
+
+<meta
+  content="
+  buchi rotavapor,
+  Rotary evaporator 1 ltr,
+  Rotary Apparatus,
+    Rotavap,
+    Industrial Rotavap,
+    Rotary apparatus 1 ltr, 
+"
+  name="DrK Instruments"
+/>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rotary Apparatus</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'favicon.svg' %}" type="image/svg+xml" />
+
+    <!-- Preload Images -->
+    <link rel="preload" as="image" href="{% static 'images/hero-banner.png' %}" media="(min-width: 768px)" />
+    <link rel="preload" as="image" href="{% static 'images/hero-banner-bg.png' %}" media="(min-width: 768px)" />
+    <link rel="preload" as="image" href="{% static 'images/hero-bg.jpg' %}" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" data-header>
+        <div class="container">
+          <h1>
+            <a href="{% url 'index' %}" class="logo">DrK instrument<span class="navbar-link"></a>
+          </h1>
+  
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+              <li class="nav-item">
+                <a href="{% url 'index' %}" class="navbar-link" data-nav-link>Home</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="{% url 'product_list' %}" class="navbar-link" data-nav-link>Products List</a>
+              </li>
+              
+              <li class="nav-item">
+                <a href="{% url 'contact_us' %}" class="navbar-link" data-nav-link>Contact Us</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="{% url 'blog_list'%}" class="navbar-link" data-nav-link>Blog</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="{% url 'about_us' %}" class="navbar-link" data-nav-link>About Us</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <div class="header-btn-group">
+            <button class="search-btn" aria-label="Search" data-search-btn>
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+            <a href="{% url 'user-logins'%}">
+              <button class="btn btn-hover">Sign In</button>
+            </a>
+            <a href="{%url 'user-register'%}">
+              <button class="btn btn-hover">Register</button>
+            </a>
+            <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+              <span class="line top"></span>
+              <span class="line middle"></span>
+              <span class="line bottom"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="background-image: url('{% static 'images/hero-bg.jpg' %}')">
+       
+            <div class="col-md-10 mx-auto">
+                <div class="card" style="box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); border: 4px solid #ffd700; padding: 20px; border-radius: 10px; margin-top: 20px;margin-bottomtop: 20px;">
+                  <div class="blog-post">
+                    <!-- Title -->
+              
+                    <h1 style="font-weight: bold; color: black; text-align: center;">
+                      {{ title }} Rotary evaporator (rotavap)
+
+                  </h1>
+                  <div class="image-container" style="text-align: center;">
+                    <img src="{% static 'images/food-menu-23.png' %}" alt="Image for {{ title }}" style="max-width: 50%; height: auto; display: block;">
+                </div>
+
+                Our Rotary apparatus is ideal for effective removal of solvent from sample using evaporation.
+                Rotary evaporators are versatile tools used in a variety of applications beyond continuous distillation 
+                of volatile solvents. They play a key role in concentration, crystallization, drying, separation, and solvent 
+                recovery processes. These instruments are widely utilized across numerous industries, such as pharmaceuticals,
+                chemicals, and biotechnology.
+
+                <br/> 
+                <br/> 
+
+                    <!-- Subtitle -->
+                    <h2 style="font-weight: bold; color: black;">{{ subtitle }} Working Principle Of Rotary Apparatus </h2>
+                    <br/> 
+                
+                    Rotary evaporators operate based on the principle that solvents have different boiling points, which can be lowered under reduced pressure. 
+                    A rotary evaporator works on the principle that as the vacuum in the evaporation flask increases, the boiling point of the liquid inside lowers.
+                    The evaporation flask spins at a designated speed, creating a thin, uniform film of material on the inner surface of the flask.
+                     This maximizes the surface area for efficient evaporation.
+                     A rotary evaporator is often linked to a vacuum pump to improve process efficiency. This setup creates a vacuum, which in turn lowers the boiling point of the solution and speeds up evaporation.
+                  
+                  <br/>  <br/>
+
+                  
+                  <!-- Point-wise list -->
+
+                       
+                </ol>
+                {{ main_body }}  <p><h2 style="font-weight: bold; color: black;">{{ subtitle }} Rotary Apparatus Feature</h2>
+                  <br/> 
+                  
+                  <ol>                            
+                    <li>1. Digital speed display.</li>
+                    <li>2. Digital time display.</li>                              
+                    <li>3. Motorized Lift: Automatically adjusts the position of the evaporator flask for convenience and precision. <li>                               
+                    <li>4. Manual Lift: Allows manual adjustment of the evaporator flask with a stroke length of 140 mm.</li>
+                    <li>5. Safety Stop Function: In case of a power outage, the evaporator flask is automatically lifted out of the heating bath to prevent overheating or damage.</li>
+                    <li>6. Speed range from 20 to 280 rpm. </li>
+                    <li>7. Smooth start from 100 rpm. </li>
+                    <li>8. Temperature control of the heating bath. </li>
+                    <li>9. Timer function shuts off heating bath at completion of timer sequence .</li>
+                    <li>10. Automatically controlled digital display for rotational speed and bath temperature.</li>  
+                    <!-- Add more points as needed -->
+                </ol>
+                <br/>
+                <h2 style="font-weight: bold; color: black;">{{ subtitle }} Rotary Evaporator Usages </h2>
+                <br/> 
+                  <ol>
+                    <li>Pharmaceutical Industry: Rotary evaporators are used for drug formulation and synthesis, purification, and concentration of pharmaceutical compounds.</li>
+                    <li>Chemical Industry: They play a crucial role in the synthesis, purification, and concentration of chemicals, including organic and inorganic compounds.</li>
+                    <li>Food and Beverage Industry: Rotary evaporators help concentrate flavors, fragrances, and extracts for use in food products and beverages.</li>
+                    <li>Cannabis Industry: These devices are used for the purification and concentration of cannabinoids in cannabis extracts.</li>
+                    <li>Research and Academia: Rotary evaporators are commonly found in laboratories for a variety of applications such as the purification and analysis of chemical samples.</li>
+                    <li>Cosmetics Industry: They are used to extract and concentrate active ingredients for use in cosmetic products.</li>
+                    <li>Petroleum Industry: In this industry, rotary evaporators can be used for refining processes and in the study of fuel components.</li>
+                    <li>Environmental Science: Rotary evaporators aid in the analysis and treatment of samples for environmental research, such as water and soil testing.</li>
+                </ol>
+                <br/>  
+                    <!-- Main Body -->
+                    <div class="main-body">
+                        <p><h2 style="font-weight: bold; color: black;">{{ subtitle }} Rotary Evaporator Parts  </h2>
+                          <br/>  
+                          <ol>
+                            <li>Heating Bath</li>
+                            <li>Rotating evaporation flask</li>
+                            <li>Drive Motor</li>
+                            <li>Circulator Inlet</li>
+                            <li>Circulator outlet</li>
+                            <li>Condenser</li>
+                            <li>Vacuum pump inlet</li>
+                            <li>Receiving Flask</li>                        
+                            <li>Woulff Bottle</li>
+                            <!-- Add more points as needed -->
+                            <div class="image-container" style="text-align: center;">
+                              <img src="{% static 'images/2001-A.png' %}" alt="Image for {{ title }}" style="max-width: 50%; height: auto; display: block;">
+                          </div>
+                          <br/>  
+                        </ol>
+                            {{ main_body }}  <p><h2 style="font-weight: bold; color: black;">{{ subtitle }} Operating Procedure</h2>
+                              <br/>  <ol>
+                                <li>1. Place your sample in a clean round bottom flask and connect the flask to the condenser.</li>
+                                <li>2. Use vacuum grease and a Keck clamp if needed for sealing and securing connections.</li>
+                                <li>3. Check that the collection flask is clean</li>
+                                <li>4. Make sure the chiller, condenser, and vacuum pump are all properly connected.</li>
+                                <li>5. Turn on the chiller and set the temperature to the desired level (usually around 11°C, but not below 9°C).</li>
+                                <li>6. Turn on the vacuum pump and check the gauge for proper vacuum (around 27 in Hg). </li>
+                                <li>7. Fill the hot bath with water for the round bottom flask to sit in. </li>
+                                <li>8. Adjust the position of the flask and set the desired temperature on the hot bath. </li>
+                                <li>9. Turn on the rotary evaporator and set the desired spin speed and/or evaporation time. </li>
+                                <li>10. Start the evaporation process by pressing the dial on the control panel. </li>
+                                <li>11. Once evaporation is complete, stop the rotary evaporator by pressing the dial again. </li>
+                                <li>12. Raise the system, turn off the hot bath, chiller, and vacuum pump. </li>
+                                <li>13. Vent the system by opening the release valve. </li>
+                                <li>14. Remove your product and clean all flasks. </li>
+                     
+                                <!-- Add more points as needed -->
+                            </ol>                              
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </section>
+
+    <!-- Your existing script and ionicons links -->
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

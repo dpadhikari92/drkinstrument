@@ -70,6 +70,10 @@ def capsule(request):
     return render(request, 'capsule.html')
 
 
+def rotary(request):
+    return render(request, 'Rotary.html')
+
+
 # blog/views.py
 
 
