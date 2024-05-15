@@ -18,6 +18,10 @@ from django.contrib import admin
 from django.urls import path, include
 from user import views as user_view
 from django.contrib.auth import views as auth_views
+from django.contrib.sitemaps.views import sitemap
+from django.contrib.sitemaps.views import sitemap
+from .sitemaps import StaticViewSitemap
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,3 +31,11 @@ urlpatterns = [
          name='user-logins'),
 
 ]
+
+sitemaps = {
+    'static': StaticViewSitemap,
+}
+
+# Add this to your urlpatterns variable:
+path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
+     name='django.contrib.sitemaps.views.sitemap'),

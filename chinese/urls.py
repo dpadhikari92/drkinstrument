@@ -1,8 +1,8 @@
 from django.urls import path
 from chinese import views
 from django.conf import settings
-
 from django.conf.urls.static import static
+from django.views.generic.base import TemplateView
 
 
 urlpatterns = [
@@ -17,6 +17,8 @@ urlpatterns = [
          name='capsule-filling-machine'),
     path('rotary-evaporator-rotavap/', views.rotary,
          name='rotary'),
+    path("robots.txt", TemplateView.as_view(
+        template_name="robots.txt", content_type="text/plain"),),
 
 ]
 if settings.DEBUG:
